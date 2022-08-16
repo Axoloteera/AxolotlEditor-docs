@@ -22,12 +22,8 @@ jobs:
         with:
           src: docs/
           dst: ./gh-pages
-          icon: diamond-stone
           title:  AxolotlEditorDocs
-          primary-color: purple
-          secondary-color: blue
       - name: Deploy GH Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.D }}
           publish_dir: ./gh-pages
